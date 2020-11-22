@@ -47,7 +47,7 @@ Only the Jump Box machine can accept connections from the Internet. Access to th
 - Local IP Address (My personal IP)
 
 Machines within the network can only be accessed by SSH.
-- Jump Box Provisioner 52.188.149.249
+- Jump Box Provisioner (Public IP address of your Jump Box)
 
 A summary of the access policies in place can be found in the table below.
 
@@ -76,8 +76,8 @@ https://github.com/blubas27/ELK-Stack/blob/main/Images/ELK_docker_ps.png (ELK_do
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- Web-1 10.1.0.10
-- Web-2 10.1.0.8
+- Web-1 10.1.0.10 (Private IP address)
+- Web-2 10.1.0.8  (Private IP Address)
 
 We have installed the following Beats on these machines:
 - Filebeat
@@ -102,7 +102,7 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
     This is the config file, ie (filebeat-config-yml). You would sepcify which machine ansible is installing on by inserting the private IP addresses of the VM's into a selected group, ie (webservers).
 - _Which URL do you navigate to in order to check that the ELK server is running?
-     http://ELK IP]:5601/app/kibana
+     http://ELK Public IP]:5601/app/kibana
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
