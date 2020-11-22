@@ -30,7 +30,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Metricbeat records metrics and statistics from the operating system, and applications running on servers.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -96,7 +95,6 @@ SSH into the control node and follow the steps below:
 - Update the config file to include the group of servers and the IP addresses.
 - Run the playbook, and navigate to the target machines, and run sudo docker ps to see if the correct containers have been installed and to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
     The playbook is the set of instructions that you hand to ansible to install applications on your web servers, ie (filebeat-playbook.yml).  You copy this file from your ansible container to your web VM's.
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
