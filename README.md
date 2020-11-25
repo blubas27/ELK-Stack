@@ -99,7 +99,7 @@ SSH into the control node and follow the steps below:
     The playbook is the set of instructions that you hand to ansible to install applications on your web servers, ie (filebeat-playbook.yml).  You copy this file from your ansible container to your web VM's.
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
     This is the config file, ie (filebeat-config-yml). You would sepcify which machine ansible is installing on by inserting the private IP addresses of the VM's into a selected group, ie (webservers).
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- Which URL do you navigate to in order to check that the ELK server is running?
      http://[ELK Public IP]:5601/app/kibana
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
